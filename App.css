@@ -1,0 +1,60 @@
+
+
+.card {
+  background: #111;
+  border-radius: 16px;
+  padding: 12px;
+  width: 230px;
+  text-align: center;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+  border: 2px solid #e62429;
+  box-shadow: 0 4px 12px rgba(230, 36, 41, 0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+  color: #e62429;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 8px #fff;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.card:hover h2 {
+  color: #fff;
+  text-shadow: 0 0 12px #e62429, 0 0 24px #e62429;
+}
+
+
+.search-box button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e62429;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(230, 36, 41, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(230, 36, 41, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(230, 36, 41, 0); }
+}
